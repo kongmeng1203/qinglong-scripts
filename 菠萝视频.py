@@ -4,8 +4,13 @@
 仓库地址：https://github.com/kongmeng1203/qinglong-scripts
 火锅视频的玩法/享视模式
 目前无须实铭,每天花三分钟刷视频,产出BOLS可以铸造BOLO,可以转增交易
+
 注册地址:http://www.bolomedia.cn/h5/reg.html?invite_code=3UWX29
-zjp别充值
+
+需要每天领取一下前一天的收益
+
+zjp别充值！！！！！
+
 ------------项目配置------------
 变量名: blsp
 格式:账号#密码
