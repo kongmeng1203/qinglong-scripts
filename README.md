@@ -7,4 +7,4 @@
 
 ### Star History 点亮项目星星！
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Eoyz369/QingLong_Script&type=Date)](https://star-history.com/#Eoyz369/QingLong_Script&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=kongmeng1203/qinglong-scripts&type=Date)](https://star-history.com/#kongmeng1203/qinglong-scripts&Date)
