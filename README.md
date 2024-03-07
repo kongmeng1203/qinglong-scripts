@@ -2,7 +2,7 @@
 自用青龙脚本库，内容收集自互联网    
 有问题进交流群 654564427
 ### 访问量
-![Visitor Count](https://profile-counter.glitch.me/QingLong_Script/count.svg)   
+![Visitor Count](https://profile-counter.glitch.me/qinglong-scripts/count.svg)   
 
 
 ### Star History 点亮项目星星！
