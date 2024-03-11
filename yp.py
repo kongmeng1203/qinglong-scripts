@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 new Env('甬派任务本MK1.0');
-先运行脚本，有问题到群里问 https://t.me/mkwd123
+先运行脚本，有问题到群里问 654564427
 通知模块请复制青龙的notify.py到脚本同级目录
 """
 import datetime #line:7
