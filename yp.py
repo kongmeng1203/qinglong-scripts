@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-变量名：mkypck  
 new Env('甬派任务本MK1.0');
-先运行脚本有问题群里问654564427
+先运行脚本，有问题到群里问 https://t.me/mkwd123
 通知模块请复制青龙的notify.py到脚本同级目录
 """
 import datetime #line:7
@@ -14,11 +13,6 @@ import threading #line:12
 from queue import Queue #line:13
 import time #line:14
 import requests #line:15
-def get_msg ():#line:18
-    OO0O0O00O000OO0OO ={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"}#line:20
-    OO0OO00O0O0OOO0O0 =requests .get ('https://jihulab.com/xizhiai/xiaoym/-/raw/main/ver.json',headers =OO0O0O00O000OO0OO ).json ()#line:21
-    return OO0OO00O0O0OOO0O0 #line:22
-_O0OOO00OOO000OOO0 =get_msg ()#line:25
 def ftime ():#line:28
     OOOO000OO0O0O0OOO =datetime .datetime .now ().strftime ('%Y-%m-%d %H:%M:%S')#line:29
     return OOOO000OO0O0O0OOO #line:30
@@ -35,6 +29,7 @@ class YPAPP :#line:44
     def __init__ (OOOO0OO00000OOOOO ,O0O0OO0O00OOO0OO0 ,O0OO0000OOO0OO000 ):#line:45
         OOOO0OO00000OOOOO .session =requests .session ()#line:46
         OOOO0OO00000OOOOO .deviceid =O0OO0000OOO0OO000 .split ('#')[0 ]#line:47
+        print("报错信息：",O0OO0000OOO0OO000)
         OOOO0OO00000OOOOO .ticket =O0OO0000OOO0OO000 .split ('#')[1 ]#line:48
         OOOO0OO00000OOOOO .session .headers ={'User-Agent':'okhttp/4.9.1'if re .match (r'^[a-z0-9]*$',OOOO0OO00000OOOOO .deviceid )else 'PLYongPaiProject/10.1.1 (iPhone; iOS 15.7.9; Scale/2.00)','appversion':'10.1.1','ticket':OOOO0OO00000OOOOO .ticket ,'deviceid':OOOO0OO00000OOOOO .deviceid ,}#line:55
         OOOO0OO00000OOOOO .index =O0O0OO0O00OOO0OO0 #line:56
@@ -68,7 +63,9 @@ class YPAPP :#line:44
         while len (O00000OOOO0000O0O .newsIds )<50 :#line:86
             for O0OO0OO0OOO0O00OO in range (5 ):#line:87
                 OOOO0OO00000OO0OO =f'https://ypapp.cnnb.com.cn/yongpai-news/api/v2/news/list?channelId={O0OO0OO0OOO0O00OO}&currentPage=1&timestamp={O0O0O0OOOOOOO0OOO}'#line:88
+                
                 O0OO0O0OO0O0OOO00 =O00000OOOO0000O0O .session .get (OOOO0OO00000OO0OO ).json ()#line:89
+               
                 if O0OO0O0OO0O0OOO00 .get ('code')!=0 :#line:90
                     print ('获取新闻失败')#line:91
                     continue #line:92
@@ -80,16 +77,30 @@ class YPAPP :#line:44
     def read_news (O00OO00OOO00O0O0O ,O0OO00OO000O0OOO0 ,OOOO0O0OOOOO0O0O0 ):#line:99
         O0O000OOOOOOOO00O =f'https://ypapp.cnnb.com.cn/yongpai-news/api/news/detail?newsId={OOOO0O0OOOOO0O0O0}&userId={O00OO00OOO00O0O0O.userid}'#line:100
         O000O0000OO00OO0O =O00OO00OOO00O0O0O .session .get (O0O000OOOOOOOO00O ).json ()#line:101
+
         if O000O0000OO00OO0O .get ('code')==0 :#line:102
             print (f'【阅读】[账号{O00OO00OOO00O0O0O.index}] 第{O0OO00OO000O0OOO0}次阅读完成')#line:103
     def prize (OO0OOOO0O00OOO0OO ,OOOOOO0OOO0OOO00O ,OOOO00O00OOO000O0 ):#line:105
-        O0000OOOO0OOO0OO0 =f'https://ypapp.cnnb.com.cn/yongpai-ugc/api/praise/save_news?deviceId={OO0OOOO0O00OOO0OO.deviceid}&newsId={OOOO00O00OOO000O0}&userId={OO0OOOO0O00OOO0OO.userid}'#line:106
+        O0000OOOO0OOO0OO0 =f'https://ypapp.cnnb.com.cn/yongpai-ugc/api/praise/save_news?userId={OO0OOOO0O00OOO0OO.userid}&newsId={OOOO00O00OOO000O0}&deviceId={OO0OOOO0O00OOO0OO.deviceid}'#line:106
         OOOOOO0OO00OOOO00 =OO0OOOO0O00OOO0OO .session .get (O0000OOOO0OOO0OO0 ).json ()#line:107
+
         if OOOOOO0OO00OOOO00 .get ('code')==0 :#line:108
             print (f'【点赞】[账号{OO0OOOO0O00OOO0OO.index}] 第{OOOOOO0OOO0OOO00O}次{OOOOOO0OO00OOOO00["data"]["review"]}，获得积分{OOOOOO0OO00OOOO00["data"].get("score")}')#line:109
         else :#line:110
             print (f'【点赞】[账号{OO0OOOO0O00OOO0OO.index}] 第{OOOOOO0OOO0OOO00O}次{OOOOOO0OO00OOOO00["data"]["review"]}')#line:111
+    def forward (a ,b ,c ):#line:105
+        O0000OOOO0OOO0OO0 =f'https://ypapp.cnnb.com.cn/yongpai-ugc/api/forward/news?userId={a.userid}&newsId={c}&source=1'#line:106
+        OOOOOO0OO00OOOO00 =a .session .get (O0000OOOO0OOO0OO0 ).json ()#line:107
+
+        if OOOOOO0OO00OOOO00 .get ('code')==0 :#line:108
+             print (f'【转发】[账号{a.index}] 获得积分{OOOOOO0OO00OOOO00["data"]}')#line:109
+        else :#line:110
+            print (f'【转发】[账号{a.index}] 错误！！！')#line:111
+    
+    
+    
     def run (O00O0000OO0O0OOO0 ):#line:113
+        number = 15
         if O00O0000OO0O0OOO0 .get_userinfo ():#line:114
             O00O0000OO0O0OOO0 .get_newsids ()#line:115
             random .shuffle (O00O0000OO0O0OOO0 .newsIds )#line:116
@@ -98,8 +109,18 @@ class YPAPP :#line:44
             for O00OO0O0OO0O000O0 ,O00OO0O00O00OO00O in enumerate (O0O00O0OOOOOOO000 ,start =1 ):#line:119
                 O00O0000OO0O0OOO0 .read_news (O00OO0O0OO0O000O0 ,O00O0000OO0O0OOO0 .newsIds [O00OO0O00O00OO00O ])#line:120
                 time .sleep (1 )#line:121
+                
                 O00O0000OO0O0OOO0 .prize (O00OO0O0OO0O000O0 ,O00O0000OO0O0OOO0 .newsIds [O00OO0O00O00OO00O ])#line:122
                 time .sleep (2 )#line:123
+                if number >=0 :
+                    print("转发剩余次数：",number)
+                    O00O0000OO0O0OOO0 .forward (O00OO0O0OO0O000O0 ,O00O0000OO0O0OOO0 .newsIds [O00OO0O00O00OO00O ])#line:122
+                    time .sleep (5 )#line:123
+                    number = number - 1
+                else:
+                    print("转发完成，不再转发") 
+
+                
             O00O0000OO0O0OOO0 .get_userinfo ()#line:124
             return O00O0000OO0O0OOO0 .msg #line:125
 def yp (O0OOOO0000OOOO0O0 ,OO00OO0OOOO0O0OO0 ):#line:128
