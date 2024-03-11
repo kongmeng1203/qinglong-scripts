@@ -129,6 +129,6 @@ def main ():#line:147
     while not O0O0O0OO0OO0OO0OO .empty ():#line:167
         OOO00OO000OO0000O +=O0O0O0OO0OO0OO0OO .get ()+'\n'#line:168
     if load_notify ():#line:169
-        send ('甬派任务通知',OOO00OO000OO0000O +f'\n\n本通知by：MK1.0垃圾甬派任务本 讨论群：https://t.me/mkwd123\n通知时间：{ftime()}')#line:171
+        send ('甬派任务通知',OOO00OO000OO0000O +f'\n\n本通知by：MK1.0垃圾甬派任务本 讨论群：654564427\n通知时间：{ftime()}')#line:171
 if __name__ =='__main__':#line:174
     main ()#line:175
