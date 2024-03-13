@@ -1,5 +1,5 @@
 /**
- * 下载链接：  http://www.mofamoli.com/h5/reg.html?invite_code=14BWWC
+ * 下载链接：  http://www.zhihuidiqiu.com.cn/h5/reg.html?invite_code=14BWWC
  * cron 10 7 * * *  
  * 老项目了，现在可以转成泰达币提出来
  * 每天自动启动地球
