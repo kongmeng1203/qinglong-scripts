@@ -5,7 +5,7 @@
 * 小阅阅阅读 V1.91
 
 * 活动入口,微信打开：
-* http://diwe_1.qcxnu.shop/yunonline/v1/auth/0987c95bebcf3d2cb19759282403af24?codeurl=diwe_1.qcxnu.shop&codeuserid=2&time=1711700557
+* http://71240214203292150.nkw2i.shop/yunonline/v1/auth/0987c95bebcf3d2cb19759282403af24?codeurl=nkw2i.shop&codeuserid=2&time=1711720222
 * 打开活动入口，抓包的任意接口cookies中的ysm_uid参数
 * 
 * 变量格式：
