@@ -4,8 +4,9 @@
 * 仅供学习交流，请在下载后的24小时内完全删除 请勿将任何内容用于商业或非法目的，否则后果自负。
 * 小阅阅阅读 V1.91
 
-* 活动入口,微信打开：
-* http://71240214203292150.nkw2i.shop/yunonline/v1/auth/0987c95bebcf3d2cb19759282403af24?codeurl=nkw2i.shop&codeuserid=2&time=1711720222
+*每天可阅读180篇，每天1.8元 
+*活动入口,微信打开：
+* http://71240214203301600.br2xi.shop/yunonline/v1/auth/0987c95bebcf3d2cb19759282403af24?codeurl=br2xi.shop&codeuserid=2&time=1711785635
 * 打开活动入口，抓包的任意接口cookies中的ysm_uid参数
 * 
 * 变量格式：
