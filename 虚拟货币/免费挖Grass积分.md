@@ -12,7 +12,7 @@
 
 ## 1、用科学上网打开注册（不用科学上网可能会出现按钮是灰色的情况解决方法看下图）
 
-![](C:\Users\GZX\Desktop\111.jpg)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/8ed7e8db6da241349fbc0365a0e53a52.jpeg)
 
 ## 2、然后去安装一下扩展看下图
 
