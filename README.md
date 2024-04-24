@@ -6,4 +6,4 @@
 
 十分感谢！！！
 
-<img src="https://raw.githubusercontent.com/kongmeng1203/qinglong-scripts/main/img/zfb.jpg" style="zoom: 25%;float: left; margin-right: 10px;" />
+<img src="https://raw.githubusercontent.com/kongmeng1203/qinglong-scripts/main/img/zfb.jpg" width = "210px" style="float: left; margin-right: 10px;" />
